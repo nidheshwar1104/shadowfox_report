@@ -1,49 +1,77 @@
-# ShadowFox Cybersecurity Internship – Lab Report
+# 🛡️ ShadowFox Cybersecurity Internship — Lab Report
 
-## Disclaimer
-This report is based on **authorized lab environments and simulated targets only**.
-No real client data or credentials are disclosed.
+## ⚠️ Disclaimer
+This report is based on **authorized lab environments and simulated targets only**. No real client data, systems, or credentials are disclosed. All activities were performed in a controlled, legal, and ethical lab setting for educational purposes.
 
-## Internship Details
-- Company: ShadowFox
-- Domain: Cybersecurity
-- Level: Beginner – Advanced
-- Duration: 1 Month
+---
 
-## Tools Used
+## 📋 Internship Details
+
+| Field | Detail |
+|---|---|
+| **Company** | ShadowFox |
+| **Domain** | Cybersecurity |
+| **Level** | Beginner – Advanced |
+| **Duration** | 1 Month |
+
+---
+
+## 🧰 Tools Used
+
 - Nmap
 - Gobuster
 - Wireshark
 - Metasploit
-- Veracrypt
+- VeraCrypt
 - enum4linux
 - Hydra
 
-## Task 1: Port Scanning
-- Objective: Identify open ports
-- Tool: Nmap
-- Result: HTTP service detected
-- Risk Level: Low
-- Mitigation: HTTPS enforcement, patching
+---
 
-## Task 2: Directory Enumeration
-- Tool: Gobuster
-- Finding: Sensitive directories exposed
-- Risk: Medium
-- Mitigation: Access control, remove repo files
+## 🔍 Task 1: Port Scanning
 
-## Task 3: Credential Exposure (Lab)
-- Observation: Credentials transmitted in plaintext
-- Risk: High
-- Mitigation: HTTPS, HSTS, MFA
+- **Objective:** Identify open ports and running services on the target
+- **Tool:** Nmap
+- **Result:** HTTP service detected
+- **Risk Level:** 🟢 Low
+- **Mitigation:** Enforce HTTPS, apply regular patching
 
-## Intermediate & Advanced Tasks
+---
+
+## 📂 Task 2: Directory Enumeration
+
+- **Tool:** Gobuster
+- **Finding:** Sensitive directories exposed on the web server
+- **Risk Level:** 🟡 Medium
+- **Mitigation:** Implement access controls, remove exposed repo/config files
+
+---
+
+## 🔑 Task 3: Credential Exposure (Lab)
+
+- **Observation:** Credentials transmitted in plaintext over the network
+- **Risk Level:** 🔴 High
+- **Mitigation:** Enforce HTTPS, enable HSTS, implement MFA
+
+---
+
+## 🧪 Intermediate & Advanced Tasks
+
 - Reverse shell (lab simulation)
-- Disk decryption (Veracrypt)
+- Disk decryption (VeraCrypt)
 - Privilege escalation (TryHackMe lab)
 
-## Key Learnings
+---
+
+## 🎓 Key Learnings
+
 - SOC investigation workflow
-- Vulnerability documentation
-- Risk scoring (CVSS)
-- Incident mitigation
+- Vulnerability documentation practices
+- Risk scoring using CVSS
+- Incident mitigation strategies
+
+---
+
+## 📌 Note
+
+All findings, tools, and techniques documented here were applied strictly within **authorized, isolated lab environments** (e.g., TryHackMe) for skill development purposes and do not reflect any unauthorized testing of live systems.
